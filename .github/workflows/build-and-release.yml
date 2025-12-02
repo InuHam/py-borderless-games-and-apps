@@ -50,11 +50,13 @@ jobs:
           name: py-borderless-games-and-apps-exe
           path: dist
 
+      - name: Create ZIP bundle
+        run: |
+          powershell Compress-Archive -Path dist/Borderless-Games-and-Apps.exe,dist/updater.exe -DestinationPath dist/Borderless-Games-and-Apps-${{ github.ref_name }}.zip
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            dist/Borderless-Games-and-Apps.exe
-            dist/updater.exe
+          files: dist/Borderless-Games-and-Apps-${{ github.ref_name }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
