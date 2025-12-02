@@ -7,7 +7,7 @@ from packaging import version
 
 class Updater:
     def __init__(self):
-        self.GITHUB_REPO = "cherzlieb/py-borderless-games-and-apps"  # Prüfe ob dies dein korrektes Repository ist
+        self.GITHUB_REPO = "inuham/py-borderless-games-and-apps"  # Prüfe ob dies dein korrektes Repository ist
         self.APP_NAME = "Borderless-Games-and-Apps.exe"
         self.current_version = self._get_current_version()
         print(f"Initialisiere Updater. Aktuelle Version: {self.current_version}")
