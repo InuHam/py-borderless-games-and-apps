@@ -1,6 +1,6 @@
 # Borderless Games and Apps
 
-[![Release](https://img.shields.io/github/v/release/cherzlieb/py-borderless-games-and-apps)](https://github.com/cherzlieb/py-borderless-games-and-apps/releases)
+[![Release](https://img.shields.io/github/v/release/inuham/py-borderless-games-and-apps)](https://github.com/inuham/py-borderless-games-and-apps/releases)
 
 A simple tool to make any window borderless. Perfect for games and applications that don't support borderless windowed mode natively.
 
@@ -30,7 +30,7 @@ A simple tool to make any window borderless. Perfect for games and applications 
 
 ```bash
 # Clone the repository
-git clone https://github.com/cherzlieb/py-borderless-games-and-apps
+git clone https://github.com/inuham/py-borderless-games-and-apps
 
 # Create virtual environment
 python -m venv .venv
